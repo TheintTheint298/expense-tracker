@@ -39,11 +39,27 @@ function ExpenseForm() {
     // });
   }
 
+  // function inputChangeHandler(identifier, value) {
+  //   if (identifier === "title") {
+  //     setEnteredTitle(value);
+  //   } else if (identifier === "date") {
+  //     setEnteredDate(value);
+  //   } else {
+  //     setEnteredAmount(value);
+  //   }
+  // }
+
   return (
     <form>
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
+          {/* <input
+            type="text"
+            onChange={(event) =>
+              inputChangeHandler("title", event.target.value)
+            }
+          /> */}
           <input type="text" onChange={titleChangeHandler} />
         </div>
         <div className="new-expense__control">
